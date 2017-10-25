@@ -1,0 +1,77 @@
+﻿<Window x:Class="WebBrowser.Browser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebBrowser"
+        mc:Ignorable="d"
+        Title="WebBrowser" Height="542" Width="1049">
+    <Grid Margin="0,0,2,1">
+        <StackPanel x:Name="browserStackPanel" Background="Black">
+            <ToolBar x:Name="browserToolBar" Height="35">
+                <Button x:Name="backButton" Background="White" Height="31" Margin="0,0,0,0" Content="Back" Width="41" Click="BackButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            Нажмите, чтобы вернуться.
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button x:Name="forwardButton" Background="White" Height="31" Content="Forward"  Margin="0,0,0,0" Width="49" Click="ForwardButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            Нажмите, чтобы перейти вперед.
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <TextBox x:Name="searchTextBox" Background="White" Height="31" Margin="0,0,0,0" Width="856" FontSize="18">
+                    <TextBox.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="copyMenuItem" Header="Копировать" Click="CopyMenuItem_Click"/>
+                            <MenuItem x:Name="pasteMenuItem" Header="Вставить" Click="PasteMenuItem_Click"/>
+                            <MenuItem x:Name="cutMenuItem" Header="Вырезать" Click="CutMenuItem_Click"/>
+                            <MenuItem x:Name="deleteMenuItem" Header="Удалить" Click="DeleteMenuItem_Click"/>
+                        </ContextMenu>
+                    </TextBox.ContextMenu>
+                </TextBox>
+                <Button x:Name="searchButton" Background="White" Height="31" Content="Go" Margin="0,0,0,0" Width="49" Click="SearchButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            Поиск
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+            </ToolBar>
+            <Menu x:Name="menuBrowser" Height="25">
+                <MenuItem x:Name="googleWebBrowser" Header="Google" FontSize="18" Click="GoogleWebBrowser_Click">
+                    <MenuItem.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="googleMenuItem" Header="Открыть" Click="GoogleMenuItem_Click"/>
+                        </ContextMenu>
+                    </MenuItem.ContextMenu>
+                </MenuItem>
+                <MenuItem x:Name="yandexWebBrowser" Header="Yandex" FontSize="18" Click="YandexWebBrowser_Click">
+                    <MenuItem.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="yandexMenuItem" Header="Открыть" Click="YandexMenuItem_Click"/>
+                        </ContextMenu>
+                    </MenuItem.ContextMenu>
+                </MenuItem>
+                <MenuItem x:Name="wikipediaWebBrowser" Header="Wikipedia" FontSize="18" Click="WikipediaWebBrowser_Click">
+                    <MenuItem.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="wikipediaMenuItem" Header="Открыть" Click="WikipediaMenuItem_Click"/>
+                        </ContextMenu>
+                    </MenuItem.ContextMenu>
+                </MenuItem>
+                <MenuItem x:Name="mailWebBrowser" Header="Mail.Ru" FontSize="18" Click="MailWebBrowser_Click">
+                    <MenuItem.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="mailMenuItem" Header="Открыть" Click="MailMenuItem_Click"/>
+                        </ContextMenu>
+                    </MenuItem.ContextMenu>
+                </MenuItem>
+            </Menu>
+            <WebBrowser x:Name="webBrowser" Height="448"/>
+        </StackPanel>
+    </Grid>
+</Window>

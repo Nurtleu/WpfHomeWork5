@@ -1,0 +1,14 @@
+D:\WPF\HomeWork\WebBrowser\WebBrowser\bin\Debug\WebBrowser.exe.config
+D:\WPF\HomeWork\WebBrowser\WebBrowser\bin\Debug\WebBrowser.exe
+D:\WPF\HomeWork\WebBrowser\WebBrowser\bin\Debug\WebBrowser.pdb
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\WebBrowser.csprojResolveAssemblyReference.cache
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\App.g.cs
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\WebBrowser_MarkupCompile.cache
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\WebBrowser_MarkupCompile.lref
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\WebBrowser.g.resources
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\WebBrowser.Properties.Resources.resources
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\WebBrowser.csproj.GenerateResource.Cache
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\WebBrowser.exe
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\WebBrowser.pdb
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\Browser.g.cs
+D:\WPF\HomeWork\WebBrowser\WebBrowser\obj\Debug\Browser.baml
